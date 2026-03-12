@@ -5,7 +5,7 @@ operation = input("Choose operator('+','-','*','/'):")
 if operation == '+':
     print(f"Result: {num1+num2}")
 elif operation == '-':
-    print(f"Result: {num1-num1}")
+    print(f"Result: {num1-num2}")
 elif operation == '*':
     print(f"Result: {num1*num2}")
 elif operation == '/':
