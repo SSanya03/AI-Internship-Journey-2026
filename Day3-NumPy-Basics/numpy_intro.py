@@ -15,6 +15,6 @@ matrix = np.array([
 ])
 print(f"Matrix: {matrix}")
 print("Matrix shape:", matrix.shape)
-ipmort numpy as np
+import numpy as np
 random_numbers = np.random.rand(5)
 print(f"5 Random numbers: {random_numbers}")
