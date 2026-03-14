@@ -1,7 +1,7 @@
 #prgrm12: Vector Operations using NumPy
 import numpy as np
 a = np.array([1,2,3])
-b = np.array({4,5,6])
+b = np.array([4,5,6])
 sum = a + b
 product = a * b
 print("Vector addition:", sum)
