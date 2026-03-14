@@ -10,7 +10,7 @@ print("Max of data:", np.max(data))
 print("Min of data:", np.min(data))
 import numpy as np
 matrix = np.array([
-  [1,2,3]
+  [1,2,3],
   [4,5,6]
 ])
 print(f"Matrix: {matrix}")
