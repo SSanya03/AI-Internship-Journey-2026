@@ -17,5 +17,5 @@ print(f"Math score >85:\n {high_math}")
 data["Total"] = data["math"] + data["science"] + data["english"]
 print("After adding column Total:\n",data["Total"])
 top_student = data.sort_values(by="Total", ascending=False)
-print(f"Top student: {(top_student.head(1))}")
-data.csv("processed_students.csv", index=False)
+print(f"Top student:\n {(top_student.head(1))}")
+data.to_csv("processed_students.csv", index=False)
