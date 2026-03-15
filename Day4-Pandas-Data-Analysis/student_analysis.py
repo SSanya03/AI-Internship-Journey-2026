@@ -7,7 +7,7 @@ print(f"Data info:\n {(data.info())}")
 print(f"Data describe:\n {(data.describe())}")
 print("Math columns:\n", (data["math"]))
 print("Sort by math score:\n", data.sort_values(by="math", ascending= False)) 
-print("Average science score:\n", (data["science"].mean))
+print("Average science score:\n", (data["science"].mean())
 import matplotlib.pyplot as plt
 data.plot(x="name", y=["math","science","english"], kind="bar")
 plt.title("Student scores")
