@@ -12,3 +12,10 @@ import matplotlib.pyplot as plt
 data.plot(x="name", y=["math","science","english"], kind="bar")
 plt.title("Student scores")
 plt.show()
+high_math = data[data["math"] > 85]
+print(f"Math score >85:\n {high_math}")
+data["Total"] = data["math"] + data["science"] + data["english"]
+print("After adding column Total:\n",data["Total"])
+top_student = data.sort_values(by="Total", ascending=False)
+print(f"Top student: {(top_student.head(1))}")
+data.csv("processed_students.csv", index=False)
