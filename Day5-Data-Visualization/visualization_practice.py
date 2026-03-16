@@ -10,3 +10,6 @@ data["math"].plot(kind="hist")
 plt.show()
 data.plot(x="math", y="science", kind="scatter")
 plt.show()
+import seaborn as sns
+sns.scatterplot(x="math", y="science", data=data)
+plt.show()
