@@ -1,5 +1,5 @@
 import pandas as pd
-data = pd.read_csv(r"C:\Users\KIIT0001\Desktop\AI-Internship -Journey-2026\Day4-Pandas-Data-Analysis\students.csv")
+data = pd.read_csv(r"C:\Users\KIIT0001\Desktop\AI-Internship -Journey-2026\Day6-Machine-Learning\students.csv")
 print("Students data:\n", data)
 x = data[["math", "science", "english"]]
 y = data["math"]
