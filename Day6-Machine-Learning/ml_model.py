@@ -5,6 +5,8 @@ x = data[["math", "science", "english"]]
 y = data["math"]
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
-model.fit(x, y)
-prediction = model.predict([[80, 85, 82]])
+model.fit(x,y)
+import pandas as pd
+new_data = pd.DataFrame([[80, 85, 82]], columns = ["math", "science", "english"])
+prediction = model.predict(new_data)
 print("Predicted math scores:", prediction)
