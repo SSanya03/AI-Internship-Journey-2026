@@ -10,8 +10,7 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(x_train, y_train)
 import pandas as pd
-new_data = pd.DataFrame([[80, 85, 82]], columns = ["math", "science", "english"])
-predictions = model.predict(x_train)
+predictions = model.predict(x_test)
 print("Predicted:", predictions)
 print("Actual:", list(y_test))
 from sklearn.metrics import mean_absolute_error
