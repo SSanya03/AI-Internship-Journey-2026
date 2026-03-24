@@ -14,4 +14,9 @@ new_data = pd.DataFrame([[80, 85, 82]], columns = ["math", "science", "english"]
 prediction = model.predict(x_train)
 print("Predicted:", prediction)
 print("Actual:", list(y_test))
-
+from sklearn.metrics import mean_absolute_error
+error = mean_absolute_error(y_test, prediction)
+print("Mean Absolute Error:", error)
+sample = [[80,85]]
+pred = model.predict(sample)
+print("Predicted math score:", pred)
